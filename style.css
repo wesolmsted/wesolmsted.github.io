@@ -9,7 +9,6 @@ body {
 }
 
 .title {
-  padding-top: 30px;
   text-align: center;
 }
 
@@ -20,16 +19,20 @@ body {
 }
 
 .musicPlayer {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .card {
     margin-top: 30px;
+    margin-inline: 10px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     width: 300px;
-    padding: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 23px;
+    padding-left: 23px;
     text-align: center;
     color: black;
     text-decoration: none;
