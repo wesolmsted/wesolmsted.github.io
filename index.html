@@ -35,12 +35,11 @@
             if (isMobile()) {
                 var iframe = document.querySelector('.itchio-embed');
                 if (iframe) {
-                    iframe.style.pointerEvents = 'none';
-                    iframe.style.opacity = '0.5';
+                    iframe.remove();
                 }
                 var message = document.querySelector('.mobile-message');
                 if (message) {
-                    message.style.display = 'block';
+                    message.style.display = 'flex';
                 }
             }
         });
