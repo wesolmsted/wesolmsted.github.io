@@ -16,6 +16,27 @@
     <div class=subtitle>by Jon Topielski and After Wes</div>
     <div style="padding-top: 15px;">
         <iframe frameborder="0" src="https://itch.io/embed-upload/10690482?color=000000" allowfullscreen="" width="640" height="500"><a href="https://jontopielski.itch.io/pillow-fight">Play Pillow Fight on itch.io</a></iframe>
+        <p class="mobile-message">This game is not available on mobile devices. Please visit from a desktop to play.</p>
+
+        <script>
+            function isMobile() {
+                return /Mobi|Android/i.test(navigator.userAgent);
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                if (isMobile()) {
+                    var iframe = document.querySelector('.itchio-embed');
+                    if (iframe) {
+                        iframe.style.pointerEvents = 'none';
+                        iframe.style.opacity = '0.5';
+                    }
+                    var message = document.querySelector('.mobile-message');
+                    if (message) {
+                        message.style.display = 'block';
+                    }
+                }
+            });
+        </script>
     </div>
     <div class=title >Soundtrack</div>
     <div class=musicPlayer>
